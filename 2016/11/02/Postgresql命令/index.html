@@ -3,14 +3,63 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Postgresql命令 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="安装pg-server
+
+1yum install postgresql-server
+
+打开权限登录
+
+12vim /var/lib/pgsql/data/pg_hda.conf# 将local行最后的值改为trust
+
+添加用户
+
+
+增加Linux用户adduser username
+
+使用管理员登录psqlpsql -U postgres
+
+在pg中添加用户CREATE USER user">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Postgresql命令">
+<meta property="og:url" content="http://yoursite.com/2016/11/02/Postgresql命令/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安装pg-server
+
+1yum install postgresql-server
+
+打开权限登录
+
+12vim /var/lib/pgsql/data/pg_hda.conf# 将local行最后的值改为trust
+
+添加用户
+
+
+增加Linux用户adduser username
+
+使用管理员登录psqlpsql -U postgres
+
+在pg中添加用户CREATE USER user">
+<meta property="og:updated_time" content="2016-11-02T09:30:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Postgresql命令">
+<meta name="twitter:description" content="安装pg-server
+
+1yum install postgresql-server
+
+打开权限登录
+
+12vim /var/lib/pgsql/data/pg_hda.conf# 将local行最后的值改为trust
+
+添加用户
+
+
+增加Linux用户adduser username
+
+使用管理员登录psqlpsql -U postgres
+
+在pg中添加用户CREATE USER user">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +108,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Postgresql命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Postgresql命令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/11/02/Postgresql命令/" class="article-date">
   <time datetime="2016-11-02T09:21:00.000Z" itemprop="datePublished">2016-11-02</time>
@@ -74,8 +121,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/02/Postgresql命令/">Postgresql命令</a>
+    <h1 class="article-title" itemprop="name">
+      Postgresql命令
     </h1>
   
 
@@ -132,96 +179,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/10/25/hello-world/" class="article-date">
-  <time datetime="2016-10-25T11:29:15.000Z" itemprop="datePublished">2016-10-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/25/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2016/10/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/25/hello-world/" data-id="ciupj0itu00010uhkeqr1l388" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-四种POST类型" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/10/25/四种POST类型/" class="article-date">
-  <time datetime="2016-10-25T02:54:52.000Z" itemprop="datePublished">2016-10-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/25/四种POST类型/">四种POST类型</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>form-data<br>就是http请求中的multipart/form-data，</p>
-</li>
-<li></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/25/四种POST类型/" data-id="ciupj0itq00000uhk4lwu32qe" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
